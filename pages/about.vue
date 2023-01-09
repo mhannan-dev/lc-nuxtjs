@@ -1,10 +1,8 @@
 <template>
     <div>
-        <h1>about page</h1>
+        <Title>This is about page title</Title>
+        <h1>This is about page</h1>
     </div>
 </template>
 <script>
-definePageMeta({
-    layout: "custom"
-});
 </script>
