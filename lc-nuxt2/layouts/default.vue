@@ -14,6 +14,12 @@
             <NuxtLink to="/about">About</NuxtLink>
           </li>
           <li>
+            <NuxtLink to="/register">Registration</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/login">Login</NuxtLink>
+          </li>
+          <li>
             <NuxtLink to="/contact">Contact</NuxtLink>
           </li>
         </ul>

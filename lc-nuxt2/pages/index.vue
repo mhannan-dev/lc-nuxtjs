@@ -5,4 +5,5 @@
 </template>
 <script setup>
 const title = useState('title')
+const { data: posts } = await useFetch('http://localhost/nuxt-blog/backend/api/posts')
 </script>
