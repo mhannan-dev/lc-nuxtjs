@@ -15,7 +15,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        return Post::orderBy('id', 'desc')->get();
+        return Post::with('user:id,name')->orderBy('id', 'desc')->get();
     }
 
     /**
@@ -47,7 +47,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        //
+        return $post->load('user:id,name');
     }
 
     /**

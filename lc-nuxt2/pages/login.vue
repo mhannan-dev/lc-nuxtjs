@@ -1,109 +1,119 @@
 <template>
   <div class="container mx-auto w-1/2 py-8 divide-y space-y-8 divide-gray-300">
-    <form class="w-full max-w-sm">
-      <div class="md:flex md:items-center mb-6">
-        <div class="md:w-1/3">
+    <h2 class="font-bold text-center text-2xl mb-5">Login</h2>
+    <div class="w-full max-w-xs">
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
           <label
-            class="
-              block
-              text-gray-500
-              font-bold
-              md:text-right
-              mb-1
-              md:mb-0
-              pr-4
-            "
-            for="inline-full-name"
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="Fullname"
           >
-            Full Name
+            Fullname
           </label>
-        </div>
-        <div class="md:w-2/3">
           <input
             class="
-              bg-gray-200
+              shadow
               appearance-none
-              border-2 border-gray-200
+              border
               rounded
               w-full
               py-2
-              px-4
+              px-3
               text-gray-700
               leading-tight
-              focus:outline-none focus:bg-white focus:border-purple-500
+              focus:outline-none focus:shadow-outline
             "
-            id="inline-full-name"
+            id="Fullname"
             type="text"
-            value="Jane Doe"
+            placeholder="Fullname"
           />
         </div>
-      </div>
-      <div class="md:flex md:items-center mb-6">
-        <div class="md:w-1/3">
+        <div class="mb-4">
           <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="username"
+          >
+            Username
+          </label>
+          <input
             class="
-              block
-              text-gray-500
-              font-bold
-              md:text-right
-              mb-1
-              md:mb-0
-              pr-4
+              shadow
+              appearance-none
+              border
+              rounded
+              w-full
+              py-2
+              px-3
+              text-gray-700
+              leading-tight
+              focus:outline-none focus:shadow-outline
             "
-            for="inline-password"
+            id="username"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="password"
           >
             Password
           </label>
-        </div>
-        <div class="md:w-2/3">
           <input
             class="
-              bg-gray-200
+              shadow
               appearance-none
-              border-2 border-gray-200
+              border border-red-500
               rounded
               w-full
               py-2
-              px-4
+              px-3
               text-gray-700
+              mb-3
               leading-tight
-              focus:outline-none focus:bg-white focus:border-purple-500
+              focus:outline-none focus:shadow-outline
             "
-            id="inline-password"
+            id="password"
             type="password"
             placeholder="******************"
           />
+          <p class="text-red-500 text-xs italic">Please choose a password.</p>
         </div>
-      </div>
-      <div class="md:flex md:items-center mb-6">
-        <div class="md:w-1/3"></div>
-        <label class="md:w-2/3 block text-gray-500 font-bold">
-          <input class="mr-2 leading-tight" type="checkbox" />
-          <span class="text-sm"> Send me your newsletter! </span>
-        </label>
-      </div>
-      <div class="md:flex md:items-center">
-        <div class="md:w-1/3"></div>
-        <div class="md:w-2/3">
+        <div class="flex items-center justify-between">
           <button
             class="
-              shadow
-              bg-purple-500
-              hover:bg-purple-400
-              focus:shadow-outline focus:outline-none
+              bg-blue-500
+              hover:bg-blue-700
               text-white
               font-bold
               py-2
               px-4
               rounded
+              focus:outline-none focus:shadow-outline
             "
             type="button"
           >
-            Sign Up
+            Sign In
           </button>
+          <a
+            class="
+              inline-block
+              align-baseline
+              font-bold
+              text-sm text-blue-500
+              hover:text-blue-800
+            "
+            href="#"
+          >
+            Forgot Password?
+          </a>
         </div>
-      </div>
-    </form>
+      </form>
+      <p class="text-center text-gray-500 text-xs">
+        &copy;2020 Acme Corp. All rights reserved.
+      </p>
+    </div>
   </div>
 </template>
 <script setup>
