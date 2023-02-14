@@ -13,9 +13,7 @@
   </div>
 </template>
 <script setup>
-const title = useState('title')
-const route = useRoute()
-const { data: post } = await useFetch(
-  `http://localhost/nuxt-blog/backend/api/posts/${route.params.id}`
-)
+const title = useState('title');
+const route = useRoute();
+const post = await useNuxtApp().$apiFetch(`/api/posts/${route.params.id}`);
 </script>

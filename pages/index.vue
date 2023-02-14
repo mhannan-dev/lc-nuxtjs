@@ -3,7 +3,8 @@
     <PostItem v-for="post in posts" :key="post.id" :post="post" />
   </div>
 </template>
+
 <script setup>
-const title = useState('title')
-const { data: posts } = await useFetch('http://localhost/nuxt-blog/backend/api/posts')
+  const title = useState('title')
+  const posts = await useNuxtApp().$apiFetch('/api/posts');
 </script>
