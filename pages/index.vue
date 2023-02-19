@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-  const title = useState('title')
-  const posts = await useNuxtApp().$apiFetch('/api/posts');
+  const posts = await useNuxtApp().$apiFetch('/api/posts')
+  console(posts);
 </script>

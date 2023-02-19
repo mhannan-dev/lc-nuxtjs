@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
-    "date-fns": "^2.29.3"
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.0.3"
   }
 }

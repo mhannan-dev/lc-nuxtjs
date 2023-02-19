@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// require('dotenv').config();
 export default defineNuxtConfig({
+  publicRuntimeConfig: {
+    BASE_URL: process.env.BASE_URL
+  },
   head: {
     meta: [
       {
